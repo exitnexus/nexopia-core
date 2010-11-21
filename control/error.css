@@ -1,0 +1,80 @@
+div.error_page_wrapper {
+	width: 566px;
+	background-color: #fff;
+	padding: 92px;
+	margin: 0px auto 0px auto;
+	color: #323237;
+	font-size: 11px;
+	
+	& a {
+		color: #ee2b7b;
+		font-size: 11px;
+		
+		&:hover {
+			color: #516068;
+		}
+		
+		& img {
+			display: block;
+		}
+	}
+	
+	& .explanation_container {
+		margin: 30px 0px 60px 0px;
+	}
+	
+	& .looking_for {
+		background-color: #dfdfdf;
+		color: #000;
+		padding: 6px 6px 20px 6px;
+		
+		& span.title {
+			font-weight: bold;
+		}
+		
+		& .search_input {
+			float: left;
+			margin-right: 6px;
+			margin-top: 10px;
+			
+			& input {
+				padding: 2px 2px 2px 2px;
+				font-size: 11px;
+			}
+		}
+		
+		& .button {
+			float: left;
+			margin-top: 10px;
+		}
+	}
+	
+	& .detail_box {
+		
+		& span.title {
+			font-weight: bold;
+		}
+		
+		/*
+			Note: The following textarea style attributes area also set directly on the textarea html
+			in the 404 pagehandler. This ensures that the textarea will be a decent size even if an
+			error occurs that causes the appropriate css files to not be loaded. Remember to update them
+			if you update these.
+		*/
+		& textarea {
+			width: 566px;
+			height: 55px;
+			margin-top: 4px;
+		}
+		
+		& .button {
+			margin-top: 6px;
+		}
+		
+		& .confirmation {
+			font-family: Arial, Helvetica;
+			font-weight: bold;
+			font-size: 16pt;
+		}
+	}	
+}

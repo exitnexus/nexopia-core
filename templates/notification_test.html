@@ -1,0 +1,40 @@
+<div>
+	<div style="border:solid 1px black">
+		<h3>TypeID = 1</h3>
+		<t:info_messages t:typeid="1"/>
+	</div>
+	<div style="border:solid 1px black">
+		<h3>TypeID = 2</h3>
+		<t:info_messages t:typeid="2"/>
+	</div>
+	<div>
+		<h3>Test AJAX Form - Error Result</h3>
+		<form method="POST" action="/test_stuff/notification_test_post">
+			<input type="submit" name="submit" minion_name="notification_test:ajax_submit"/>
+		</form>
+	</div>
+	<div>
+		<h3>Test Regular Form - Error Result</h3>
+		<form method="POST" action="/test_stuff/notification_test_post2">
+			<input type="submit" name="submit"/>
+		</form>
+	</div>
+	<div>
+		<h3>Test Regular Form - Success Result</h3>
+		<form method="POST" action="/test_stuff/notification_test_post3">
+			<input type="submit" name="submit"/>
+		</form>
+	</div>
+	<script>
+	Overlord.assign({
+		minion: "notification_test:ajax_submit",
+		click: function(event, element) 
+		{
+			YAHOO.util.Event.preventDefault(event);
+			var form = YAHOO.util.Dom.getAncestorByTagName(element, 'form');
+			YAHOO.util.Connect.setForm(form);
+			YAHOO.util.Connect.asyncRequest('POST', '/test_stuff/notification_test_post', new ResponseHandler({}), "ajax=true");
+		}
+	});		
+	</script>
+</div>

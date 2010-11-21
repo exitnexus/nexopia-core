@@ -1,0 +1,45 @@
+div.simple_message {
+	background-color: $primary_background_color;
+	color: $primary_text_color; 
+	font-family: $page_font_family;
+	font-size: $page_font_size;
+	font-size-adjust: 1;
+	font-weight: bold;
+	text-align: center;
+	padding: 1em;
+}
+
+.enter_input {
+	float: left;
+	margin-right: 6px;
+	margin-top: 1px;
+	width: 220px;
+	position: relative;
+}
+
+.confirm_message {
+	background-color: #acdea8;
+	border: 1px solid #68942e;
+	padding: 6px;
+	color: #000;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.bgwhite
+{
+	background-color: white;
+}
+
+#spinner
+{
+	overflow: hidden;
+}
+
+.horizontal_scrolling_expand_to_sidebar
+{
+	overflow-x: scroll;
+	width: 750px;
+}

@@ -1,0 +1,76 @@
+.info_messages_container_table
+{
+	margin: auto;
+}
+
+.info_messages, .top_level_info_messages
+{
+	margin-bottom: 6px;
+	display: none;
+	position: relative;
+	
+	& .close_link
+	{
+		position: absolute;
+		vertical-align: top;
+		right: 8px;
+		top: 6px;
+		
+		& a
+		{
+			color: #000000;
+			text-decoration: underline;
+		}
+	}
+	
+	& .info_message 
+	{
+		padding-bottom: 6px;
+		font-family: Verdana;
+		font-size: 12px;
+		color: #000000;
+		
+		& a
+		{
+			color: #EE2B7B;
+			font-size: inherit;
+		}		
+	}
+	
+	& .title
+	{
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+}
+
+.update_info_messages
+{
+	background-color: #F2F2F2;
+	border: 1px solid #333333;
+	opacity: 0.9;
+}
+
+.success_info_messages
+{
+	background-color: #E3F5EB;
+	border: 1px solid #3F7E42;
+}
+
+.error_info_messages
+{
+	background-color: #FFF5E1;
+	border: 1px solid #8D6532;
+}
+
+.info_messages
+{
+	padding: 6px 6px 0px 6px;
+}
+
+.top_level_info_messages
+{
+	padding: 12px 12px 6px 12px;
+}

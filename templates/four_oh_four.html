@@ -1,0 +1,22 @@
+<div class="error_page_wrapper">
+		
+	<img src='#{$site.static_file_url("core/images/404_error.gif")}' />
+	
+	<div class="explanation_container">
+		The page or user you are trying to visit may not exist anymore, or you could have typed the wrong address (URL).  If you are looking for a user you can use the search box below to find them.
+	</div>
+	
+	<div class="looking_for">
+		<form method="GET" action="/search">
+			<span class="title">Looking for someone?</span><br />
+			<div class="search_input">
+				<input type="text" name="string" value="Username or Email" onfocus="this.value = ''"/>
+			</div>
+			<div class="button">
+				<t:button type="submit">Search</t:button>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</form>
+	</div>
+	
+</div>

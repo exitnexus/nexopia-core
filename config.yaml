@@ -1,0 +1,11 @@
+--- !ruby/object:DependencyConfig 
+script_require: 
+- info_messages
+yui_require: 
+- yahoo
+- dom
+- event
+- connection
+- get
+- datasource
+- autocomplete
